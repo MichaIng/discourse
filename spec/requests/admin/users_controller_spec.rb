@@ -1634,6 +1634,7 @@ RSpec.describe Admin::UsersController do
     shared_examples "IP info retrieval possible" do
       it "retrieves IP info" do
         ip = "81.2.69.142"
+        GlobalSetting.class_variable_set(:@@maxmind_license_key, "dummy")
 
         DiscourseIpInfo.open_db(File.join(Rails.root, "spec", "fixtures", "mmdb"))
         Resolv::DNS.any_instance.stubs(:getname).with(ip).returns("ip-81-2-69-142.example.com")
