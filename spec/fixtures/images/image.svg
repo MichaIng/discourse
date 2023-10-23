@@ -1,6 +1,1 @@
-<svg width="100" height="50">
-  <style>
-    .black { fill: #FFFFFF; }
-  </style>
-  <text class="black" x="25" y="25">Discourse</text>
-</svg>
+<svg width="100" height="50"><style>.black{fill:#fff}</style><text x="25" y="25" class="black">Discourse</text></svg>
